@@ -13,7 +13,7 @@ index 7762568a6e7dc..e016d84fbb353 100644
  	path = third_party/highway/src
  	url = https://chromium.googlesource.com/external/github.com/google/highway
 diff --git a/DEPS b/DEPS
-index 12b7c53cd4dff..916d8fcac12a9 100644
+index fcdfe0fd7e60d..4e7d01b11dbde 100644
 --- a/DEPS
 +++ b/DEPS
 @@ -518,6 +518,10 @@ vars = {
@@ -2009,7 +2009,7 @@ index fcbb3498257ee..840487c4cd604 100644
  
  source_set("unit_tests") {
 diff --git a/third_party/blink/renderer/platform/image-decoders/image_decoder.cc b/third_party/blink/renderer/platform/image-decoders/image_decoder.cc
-index c9d94ec69a9c7..fac665c7a9ff3 100644
+index c9d94ec69a9c7..99dd7f7acc191 100644
 --- a/third_party/blink/renderer/platform/image-decoders/image_decoder.cc
 +++ b/third_party/blink/renderer/platform/image-decoders/image_decoder.cc
 @@ -52,6 +52,10 @@
@@ -2058,7 +2058,7 @@ index c9d94ec69a9c7..fac665c7a9ff3 100644
 +             mime_type == "image/jxl") {
 +    decoder = std::make_unique<JXLImageDecoder>(
 +        alpha_option, high_bit_depth_decoding_option, color_behavior,
-+        max_decoded_bytes, animation_option);
++        max_decoded_bytes);
  #endif
    }
  
